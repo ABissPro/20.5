@@ -111,6 +111,7 @@ void withdraw(int amount) {
 
 int main() {
     loadState("atm.bin");
+    system("chcp 1251"); // Установить кодировку
 
     std::cout << "Текущее состояние:\n";
     for (int i = 0; i < num_nominals; ++i)
